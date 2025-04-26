@@ -103,7 +103,7 @@ echo "<p>Your Frontend language is set to {$language}.</p>";
 Frequently, you will just want to make sure the user is logged in before continuing. The `guest` property will be set to '1' when the current user is not logged in. When the user is authenticated, `guest` will be set to '0'.
 
 ```php
-$user = JFactory::getApplication()->getIdentity();
+$user = Factory::getApplication()->getIdentity();
 if ($user->guest) {
 	echo "<p>You must login to see this content.</p>";
 } else {
